@@ -76,14 +76,14 @@
             },
             "properties": {
                 "name": "[parameters('hostingPlanName')]"
-            },
-            "kind": "linux"
+            }
         },
         {
             "apiVersion": "2016-08-01",
             "name": "[parameters('siteName')]",
             "type": "Microsoft.Web/sites",
             "location": "[parameters('siteLocation')]",
+            "kind": "app,linux",
             "dependsOn": [
                 "[resourceId('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ],
