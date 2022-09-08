@@ -41,7 +41,7 @@
             "type": "string"
         },
         "branch": {
-            "defaultValue": "feature/linux",
+            "defaultValue": "master",
             "type": "string"
         },
         "SonarQube Edition": {
