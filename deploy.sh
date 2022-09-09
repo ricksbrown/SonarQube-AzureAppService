@@ -11,6 +11,7 @@ sonar_version='9.6.1.59531'
 wget --no-hsts "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-${sonar_version}.zip"
 unzip "sonarqube-${sonar_version}.zip"
 export SONARQUBE_HOME="`pwd`/sonarqube-${sonar_version}"
+export SONAR_JAVA_PATH="${JAVA_HOME}/bin/java"
 
 echo "Running ${SONARQUBE_HOME}/bin/linux-x86-64/sonar.sh"
 $SONARQUBE_HOME/bin/linux-x86-64/sonar.sh console
