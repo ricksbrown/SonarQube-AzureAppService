@@ -7,7 +7,7 @@ chmod u+x ./jq
 # echo "Copy $DEPLOYMENT_SOURCE/wwwroot folder to $DEPLOYMENT_TARGET" 
 # cp -r $DEPLOYMENT_SOURCE/wwwroot/** $DEPLOYMENT_TARGET
 
-$sonar_version='9.6.1.59531'
+sonar_version='9.6.1.59531'
 wget "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-${sonar_version}.zip"
 unzip "sonarqube-${sonar_version}.zip"
 export SONARQUBE_HOME="`pwd`/sonarqube-${sonar_version}"
